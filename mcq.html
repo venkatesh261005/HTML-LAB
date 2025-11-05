@@ -1,0 +1,251 @@
+<html>
+<head>
+  <title>230191601058</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 30px;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    #quiz-timer {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: #d32f2f;
+      margin-bottom: 25px;
+    }
+
+    form {
+      background: rgba(246, 242, 245, 0.962);
+      padding: 25px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h3 {
+      margin-top: 25px;
+      color: #34495e;
+      font-size: 18px;
+    }
+
+    label {
+      display: block;
+      padding: 5px 10px;
+      border-radius: 6px;
+      margin: 3px 0;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    label:hover {
+      background: #e3f2fd;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    button {
+      display: block;
+      margin: 25px auto;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #0d47a1;
+      transform: scale(1.05);
+    }
+    .correct {
+      color: green;
+    }
+
+    .wrong {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>General Quiz</h2>
+  <div id="quiz-timer">Time remaining: <span id="time"></span></div>
+
+  <form id="quizForm">
+
+    <div id="q1">
+      <h3>1. When was Diwali?</h3>
+      <label><input type="radio" name="q1" value="1"> Oct 23</label>
+      <label><input type="radio" name="q1" value="2"> Oct 21</label>
+      <label><input type="radio" name="q1" value="3"> Oct 15</label>
+      <label><input type="radio" name="q1" value="4"> Oct 20</label>
+      <div class="feedback" id="fb-q1"></div>
+    </div>
+
+    <div id="q2">
+      <h3>2. When did CAT2 start?</h3>
+      <label><input type="radio" name="q2" value="1"> Oct 30</label>
+      <label><input type="radio" name="q2" value="2"> Oct 27</label>
+      <label><input type="radio" name="q2" value="3"> Oct 24</label>
+      <label><input type="radio" name="q2" value="4"> Nov 1</label>
+      <div class="feedback" id="fb-q2"></div>
+    </div>
+
+    <div id="q3">
+      <h3>3. Who is the topper of the class?</h3>
+      <label><input type="radio" name="q3" value="1"> Pavan</label>
+      <label><input type="radio" name="q3" value="2"> Sathish</label>
+      <label><input type="radio" name="q3" value="3"> Venkat</label>
+      <label><input type="radio" name="q3" value="4"> Saptha</label>
+      <div class="feedback" id="fb-q3"></div>
+    </div>
+
+    <div id="q4">
+      <h3>4. Who is the brainless person in the world?</h3>
+      <label><input type="radio" name="q4" value="1"> Pavan</label>
+      <label><input type="radio" name="q4" value="2"> Zubair</label>
+      <label><input type="radio" name="q4" value="3"> Sathish</label>
+      <label><input type="radio" name="q4" value="4"> Saptha</label>
+      <div class="feedback" id="fb-q4"></div>
+    </div>
+
+    <div id="q5">
+      <h3>5. Who got the highest CGPA in our class?</h3>
+      <label><input type="radio" name="q5" value="1"> Sathish</label>
+      <label><input type="radio" name="q5" value="2"> Venkat</label>
+      <label><input type="radio" name="q5" value="3"> Pavan</label>
+      <label><input type="radio" name="q5" value="4"> Saptha</label>
+      <div class="feedback" id="fb-q5"></div>
+    </div>
+
+    <div id="q6">
+      <h3>6. Who got less than 7 CGPA in our class?</h3>
+      <label><input type="radio" name="q6" value="1"> Zubair</label>
+      <label><input type="radio" name="q6" value="2"> Pavan</label>
+      <label><input type="radio" name="q6" value="3"> Saptha</label>
+      <label><input type="radio" name="q6" value="4"> Sathish</label>
+      <div class="feedback" id="fb-q6"></div>
+    </div>
+
+    <div id="q7">
+      <h3>7. In this semester which is the toughest subject in IoT?</h3>
+      <label><input type="radio" name="q7" value="1"> TOC</label>
+      <label><input type="radio" name="q7" value="2"> AI</label>
+      <label><input type="radio" name="q7" value="3"> DS</label>
+      <label><input type="radio" name="q7" value="4"> DM</label>
+      <div class="feedback" id="fb-q7"></div>
+    </div>
+
+    <div id="q8">
+      <h3>8. When was CAT2 finished?</h3>
+      <label><input type="radio" name="q8" value="1"> Nov 1</label>
+      <label><input type="radio" name="q8" value="2"> Nov 2</label>
+      <label><input type="radio" name="q8" value="3"> Oct 31</label>
+      <label><input type="radio" name="q8" value="4"> Nov 3</label>
+      <div class="feedback" id="fb-q8"></div>
+    </div>
+
+    <div id="q9">
+      <h3>9. What is the duration of CAT2?</h3>
+      <label><input type="radio" name="q9" value="1"> 60 mins</label>
+      <label><input type="radio" name="q9" value="2"> 80 mins</label>
+      <label><input type="radio" name="q9" value="3"> 100 mins</label>
+      <label><input type="radio" name="q9" value="4"> 90 mins</label>
+      <div class="feedback" id="fb-q9"></div>
+    </div>
+
+    <div id="q10">
+      <h3>10. What is the duration of Semester Examination?</h3>
+      <label><input type="radio" name="q10" value="1"> 2 Hours</label>
+      <label><input type="radio" name="q10" value="2"> 3 Hours</label>
+      <label><input type="radio" name="q10" value="3"> 4 Hours</label>
+      <label><input type="radio" name="q10" value="4"> 2.30 Hours</label>
+      <div class="feedback" id="fb-q10"></div>
+    </div>
+
+    <button type="button" id="submitBtn">Submit Quiz</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const testDurationMinutes = 15; 
+    const testDurationSeconds = testDurationMinutes * 60;
+    let endTime = new Date().getTime() + testDurationSeconds * 1000;
+    const timerElement = document.getElementById('time');
+
+    const countdown = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = endTime - now;
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if (distance > 0) {
+        timerElement.textContent = `${minutes}m ${seconds}s`;
+      } else {
+        clearInterval(countdown);
+        timerElement.textContent = "Time's up!";
+        submitQuiz();
+      }
+    }, 1000);
+
+    const answers = {
+      q1: "4",
+      q2: "2",
+      q3: "1",
+      q4: "3",
+      q5: "3",
+      q6: "3",
+      q7: "1",
+      q8: "1",
+      q9: "4",
+      q10:"2"
+
+    };
+
+    const submitBtn = document.getElementById('submitBtn');
+    const resultDiv = document.getElementById('result');
+    const quizForm = document.getElementById('quizForm');
+
+    function submitQuiz() {
+      clearInterval(countdown);
+      let score = 0;
+
+      for (let q in answers) {
+        let options = quizForm.elements[q];
+        let selectedValue = null;
+        for (let opt of options) {
+          if (opt.checked) selectedValue = opt.value;
+        }
+
+        const feedbackEl = document.getElementById(`fb-${q}`);
+        if (selectedValue === answers[q]) {
+          score++;
+          feedbackEl.textContent = "✅ Correct!";
+          feedbackEl.className = "feedback correct";
+        } else {
+          feedbackEl.textContent = "❌ Wrong!";
+          feedbackEl.className = "feedback wrong";
+        }
+      }
+
+      resultDiv.textContent = `You scored ${score} out of 10!`;
+    }
+    submitBtn.addEventListener('click', submitQuiz);
+  </script>
+</body>
+</html>
