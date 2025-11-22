@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reports - Expense Tracker</title>
+
+  <link rel="stylesheet" href="reports.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Expense Tracker — Reports</h1>
+      <ul>
+        <li><a href="home.html">Dashboard</a></li>
+        <li><a href="expenses.html">Add Expenses</a></li>
+        <li><a href="reports.html" class="active">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-summary">
+        <h2>Full Analytics</h2>
+        <p>Overview, category breakdown, monthly comparison, and export tools.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card wide">
+        <h3>Monthly Expenses (Bar)</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="card wide">
+        <h3>Spending Trend (Line)</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+
+      <div class="card wide">
+        <h3>Monthly Comparison</h3>
+        <table id="monthly-comparison" class="compact-table">
+          <thead><tr><th>Month</th><th>This Year</th><th>Previous Year</th><th>Change</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="card wide">
+        <h3>Raw Data & Export</h3>
+        <div class="actions">
+          <button id="btnExportJSON">Export JSON</button>
+          <button id="btnExportCSV">Export CSV</button>
+          <button id="btnPrint">Print / Save PDF</button>
+        </div>
+
+  <script src="reports.js"></script>
+</body>
+</html>
