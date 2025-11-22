@@ -14,6 +14,14 @@
 
 <body>
     <header>
+        <nav class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+    </ul>
+</nav>
+
         <nav>
             <h1>Expense Tracker</h1>
             <a class="exp" href="expenses.html">
@@ -24,8 +32,7 @@
                 <a href="expenses.html">
                     <li>Add Expenses</li>
                 </a>
-                <li>Reports</li>
-                <li>Settings</li>
+                
             <div class="auth-links">
     <a href="login.html"><h2 id="login">Log In</h2></a>
     <a href="signup.html"><h2 id="signup">Sign Up</h2></a>
@@ -37,24 +44,27 @@
         </nav>
     </header>
     <main>
-        <section class="left">
-            <div class="balance">
-                <h2>Balance Overview</h2>
-                <div class="total">
-                    <div class="income">
-                        <h3>Total Income</h3>
-                        <h2 id="income">$0</h2>
-                    </div>
-                    <div class="expenses">
-                        <h3>Total Expenses</h3>
-                        <h2 id="total-expense">$0</h2>
-                    </div>
-                    <div class="rem-balance">
-                        <h3>Remaining Balance</h3>
-                        <h2 id="reme-balance">$0</h2>
-                    </div>
-                </div>
-            </div>
+        <div class="summary-container">
+
+    <div class="summary-box summary-income" id="incomeBox">
+        <h3>Total Income</h3>
+        <h2 id="income">$0</h2>
+    </div>
+
+    <div class="summary-box summary-expense">
+        <h3>Total Expenses</h3>
+        <h2 id="total-expense">$0</h2>
+    </div>
+
+    <div class="summary-box summary-balance">
+        <h3>Remaining Balance</h3>
+        <h2 id="reme-balance">$0</h2>
+    </div>
+
+</div>
+
+
+
             <div class="transactions">
                 <h2>Recent Transactions</h2>
                 <div class="transactions-table-wrapper">
@@ -68,7 +78,7 @@
                             </tr>
                         </thead>
                         <tbody id="transactionsBody">
-                            <!-- New rows will go here -->
+                        
                         </tbody>
                     </table>
                 </div>
@@ -98,12 +108,5 @@
 
     </script>
     <script src="script.js"></script>
-    
-  <a href="#" id="logout">
-  <h2>Logout</h2>
-</a>
-
 </body>
-
-
 </html>
